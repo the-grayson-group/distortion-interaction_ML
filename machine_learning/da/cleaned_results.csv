@@ -1,0 +1,26 @@
+model,target,val,test,train
+Ridge,e_barrier_dft,1.22 ± 0.10,1.20 ± 0.09,1.35
+Ridge,q_barrier_dft,1.17 ± 0.10,1.14 ± 0.09,1.29
+Ridge,interaction_energies_dft,0.97 ± 0.09,1.00 ± 0.09,1.07
+Ridge,distortion_energy_di_dft,0.75 ± 0.08,0.61 ± 0.07,0.76
+Ridge,distortion_energy_dp_dft,0.90 ± 0.09,0.77 ± 0.08,0.80
+KRR,e_barrier_dft,0.76 ± 0.10,0.70 ± 0.08,0.88
+KRR,q_barrier_dft,0.80 ± 0.11,0.71 ± 0.09,0.95
+KRR,interaction_energies_dft,0.55 ± 0.07,0.50 ± 0.06,0.59
+KRR,distortion_energy_di_dft,0.73 ± 0.10,0.59 ± 0.08,0.73
+KRR,distortion_energy_dp_dft,0.53 ± 0.08,0.38 ± 0.05,0.54
+SVR,e_barrier_dft,0.67 ± 0.09,0.61 ± 0.07,0.78
+SVR,q_barrier_dft,0.61 ± 0.08,0.56 ± 0.06,0.70
+SVR,interaction_energies_dft,0.52 ± 0.07,0.50 ± 0.06,0.54
+SVR,distortion_energy_di_dft,0.42 ± 0.09,0.33 ± 0.08,0.39
+SVR,distortion_energy_dp_dft,0.45 ± 0.07,0.34 ± 0.05,0.44
+2 Layer NN,e_barrier_dft,0.90 ± 0.09,0.87 ± 0.08,0.68 ± 0.02
+4 Layer NN,e_barrier_dft,1.07 ± 0.09,0.98 ± 0.08,0.87 ± 0.03
+2 Layer NN,q_barrier_dft,0.74 ± 0.07,0.74 ± 0.07,0.55 ± 0.02
+4 Layer NN,q_barrier_dft,1.21 ± 0.11,1.06 ± 0.09,1.03 ± 0.03
+2 Layer NN,interaction_energies_dft,0.64 ± 0.06,0.58 ± 0.06,0.41 ± 0.02
+4 Layer NN,interaction_energies_dft,0.80 ± 0.08,0.75 ± 0.07,0.64 ± 0.02
+2 Layer NN,distortion_energy_di_dft,0.57 ± 0.08,0.48 ± 0.07,0.42 ± 0.02
+4 Layer NN,distortion_energy_di_dft,0.60 ± 0.08,0.49 ± 0.07,0.50 ± 0.03
+2 Layer NN,distortion_energy_dp_dft,0.61 ± 0.08,0.51 ± 0.07,0.39 ± 0.02
+4 Layer NN,distortion_energy_dp_dft,1.05 ± 0.11,0.92 ± 0.10,0.83 ± 0.03

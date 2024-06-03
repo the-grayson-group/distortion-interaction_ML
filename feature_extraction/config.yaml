@@ -1,0 +1,92 @@
+## Generate Features
+
+# [3+2]
+# dataset : tt
+# type : ts
+# path : X:\Chemistry\ResearchProjects\MNGrayson\EG-CH1463\year_3\datasets\three_two\gs_ts_three_two\am1\solvent\ts
+# spe : False
+# ca_from_file : True
+# ca_file : common_atoms.pkl
+# mapping_file : mapping.pkl
+# mol_types : tt_mol_types.pkl
+# verbose : 0
+
+# Diels-Alder
+# dataset : da
+# type : dist_gs
+# path: X:\Chemistry\ResearchProjects\MNGrayson\EG-CH1463\year_3\datasets\lit_diels_alder\splits_da\am1\cyclopropenes\
+# spe : False
+# common_atoms :
+#   gs : {dp : [2,4], di : [1,5,6,3]}
+#   dist_gs : {dp : [1,2], di : [1,3,4,2]}
+#   ts : [1,2,3,4,5,6]
+# ca_from_file : False
+# verbose : 1
+
+
+# Michael Additions
+# dataset : ma
+# type : dist_gs
+# path: X:\Chemistry\ResearchProjects\MNGrayson\EG-CH1463\year_3_4\datasets\michael_addition\splits_ma\am1
+# spe : True
+# common_atoms :
+#   gs : {ma : [1,2,3,4], nu : [1]}
+#   dist_gs : {ma : [1,2,3,4], nu : [1]}
+#   ts : [1,2,3,4,5,6,7,8,9,10]
+# ca_from_file : False
+# verbose : 0
+
+# Malonate
+# dataset : mal
+# type : dist_gs
+# path: X:\Chemistry\ResearchProjects\MNGrayson\EG-CH1463\year_3_4\datasets\michael_addition_mal\splits_ma_mal\am1
+# spe : True
+# common_atoms :
+#   gs : {ma : [1,2,3,4,5], nu : [1,2,3,4,5,6,7,8,9,10]}
+#   dist_gs : {ma : [1,2,3,4,5], nu : [1,2,3,4,5,6,7,8,9,10]}
+#   ts : [1,2,3,4,5,6,7,8,9,10]
+# ca_from_file : False
+# verbose : 0
+
+## Collate Features
+
+# Michael Addition
+# gs_path : H:\dist_inter\code\feature_extraction\features\ma\ma_gs.pkl
+# ts_path : H:\dist_inter\code\feature_extraction\features\ma\ma_ts.pkl
+# dist_gs_path : H:\dist_inter\code\feature_extraction\features\ma\ma_dist_gs.pkl
+# am1_barriers_path : H:\dist_inter\code\energy_extraction\barriers\ma\new_am1_ma_barriers.pkl
+# dft_barriers_path : H:\dist_inter\code\energy_extraction\barriers\ma\new_dft_ma_barriers.pkl
+# filename : ma_features.pkl
+
+# Collate Features
+# Malonate
+# gs_path : H:\dist_inter\code\feature_extraction\features\mal\mal_gs.pkl
+# ts_path : H:\dist_inter\code\feature_extraction\features\mal\mal_ts.pkl
+# dist_gs_path : H:\dist_inter\code\feature_extraction\features\mal\mal_dist_gs.pkl
+# am1_barriers_path : H:\dist_inter\code\energy_extraction\barriers\mal\am1_mal_barriers.pkl
+# dft_barriers_path : H:\dist_inter\code\energy_extraction\barriers\mal\dft_mal_barriers.pkl
+# filename : mal_features.pkl
+
+# Diels-Alder
+# gs_path : H:\dist_inter\code\feature_extraction\features\da\da_exo_gs.pkl
+# ts_path : H:\dist_inter\code\feature_extraction\features\da\da_exo_ts.pkl
+# dist_gs_path : H:\dist_inter\code\feature_extraction\features\da\da_exo_dist_gs.pkl
+# am1_barriers_path : H:\dist_inter\code\energy_extraction\barriers\da\new_am1_da_exo_barriers.pkl
+# dft_barriers_path : H:\dist_inter\code\energy_extraction\barriers\da\new_dft_da_exo_barriers.pkl
+# filename : da_exo_features.pkl
+
+# Lewis-Acid/Literature Diels-Alder
+# gs_path : H:\dist_inter\code\feature_extraction\features\lit_da\cyalk\cyalk_da_gs.pkl
+# ts_path : H:\dist_inter\code\feature_extraction\features\lit_da\cyalk\cyalk_da_ts.pkl
+# dist_gs_path : H:\dist_inter\code\feature_extraction\features\lit_da\cyalk\cyalk_da_dist_gs.pkl
+# am1_barriers_path : H:\dist_inter\code\energy_extraction\barriers\lit_da\am1_cyalk_barriers.pkl
+# dft_barriers_path : H:\dist_inter\code\energy_extraction\barriers\lit_da\dft_cyalk_barriers.pkl
+# filename : cyalk_da_features.pkl
+
+# [3+2]
+# gs_path : H:\dist_inter\code\feature_extraction\features\tt\tt_solvent_gs.pkl
+# ts_path : H:\dist_inter\code\feature_extraction\features\tt\tt_solvent_ts.pkl
+# dist_gs_path : H:\dist_inter\code\feature_extraction\features\tt\tt_solvent_dist_gs.pkl
+# am1_barriers_path : H:\dist_inter\code\energy_extraction\barriers\tt\am1_solvent_three_two_barriers.pkl
+# dft_barriers_path : H:\dist_inter\code\energy_extraction\barriers\tt\dft_solvent_three_two_barriers.pkl
+# filename : tt_solvent_features.pkl

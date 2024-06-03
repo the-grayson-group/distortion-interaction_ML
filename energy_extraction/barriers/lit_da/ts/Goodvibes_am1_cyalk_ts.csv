@@ -1,0 +1,22 @@
+   GoodVibes v3.0.1 2024/02/24 20:25:54
+   REF: Luchini, G.; Alegre-Requena J. V.; Guan, Y.; Funes-Ardoiz, I.; Paton, R. S. (2019).
+        GoodVibes: GoodVibes 3.0.1 http://doi.org/10.5281/zenodo.595246
+   Requested: --csv --output am1_cyalk_ts 
+
+   Temperature = 298.15 Kelvin   Pressure = 1 atm
+   All energetic values below shown in Hartree unless otherwise specified.
+   Using vibrational scale factor 1.0 for AM1/ZDO level of theory
+
+   Entropic quasi-harmonic treatment: frequency cut-off value of 100.0 wavenumbers will be applied.
+   QS = Grimme: Using a mixture of RRHO and Free-rotor vibrational entropies.
+   REF: Grimme, S. Chem. Eur. J. 2012, 18, 9955-9964
+
+
+   Structure,E,ZPE,H,T.S,T.qh-S,G(T),qh-G(T),
+   ********************************************************************************************************************************
+o  ts_endo_1,0.184643,0.137879,0.330662,0.039809,0.039697,0.290853,0.290964,
+o  ts_endo_2,0.142464,0.167684,0.318929,0.041382,0.041160,0.277547,0.277769,
+o  ts_endo_3,0.076635,0.198185,0.284501,0.043732,0.043293,0.240769,0.241208,
+o  ts_endo_4,0.059701,0.227683,0.297988,0.045602,0.045163,0.252386,0.252825,
+o  ts_endo_5,0.059532,0.217357,0.288519,0.047587,0.047076,0.240932,0.241444,
+   ********************************************************************************************************************************

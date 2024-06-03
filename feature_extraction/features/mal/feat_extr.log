@@ -1,0 +1,28 @@
+Malonate Michael Addition
+INFO - Loading data
+INFO - Loading data complete!
+---
+---
+INFO - Starting feature extraction.
+---
+INFO - Extract morfeus features.
+INFO - Function _morfeus_features took 3014.3793 seconds
+INFO - Morfues features finished.
+---
+INFO - Extract distances.
+INFO - Function _distances took 0.3396 seconds
+INFO - Extracting distances finished.
+---
+INFO - Extract charges.
+INFO - Function _charges took 0.0334 seconds
+INFO - Extracting charges finished.
+---
+INFO - Combine features.
+INFO - Function _combine_features took 45.2101 seconds
+INFO - Combining features finished.
+---
+INFO - Saving features.
+INFO - Saving features finished - saved to mal_dist_gs.pkl.
+---
+INFO - Feature extraction finished.
+---

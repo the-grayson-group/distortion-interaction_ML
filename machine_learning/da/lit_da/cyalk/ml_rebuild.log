@@ -1,0 +1,179 @@
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+X Shape: (799, 60)
+y Shape: (799, 6)
+---
+Train/Test/Validation Split Shapes:
+X Train: (639, 60)
+X Test: (80, 60)
+X Validation: (80, 60)
+y Train: (639, 6)
+y Test: (80, 6)
+y Validation: (80, 6)
+---
+X Shape: (5, 60)
+y Shape: (5, 6)
+---
+Pre ML (e_barrier_dft)
+14.787539499989402
+Pre ML (q_barrier_dft)
+14.445677500009953
+Pre ML (sum_distortion_energies_dft)
+2.0781544999961383
+Pre ML (interaction_energies_dft)
+12.709384999993262
+Pre ML (distortion_energy_di_dft)
+0.40825149999910515
+Pre ML (distortion_energy_dp_dft)
+1.9314449999998788
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+Ridge(alpha=0.8, tol=0.1) - e_barrier_dft
+---
+External Test: 1.214 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+Ridge(tol=0.1) - q_barrier_dft
+---
+External Test: 2.152 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+Ridge(tol=0.1) - sum_distortion_energies_dft
+---
+External Test: 2.742 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+Ridge(tol=0.1) - interaction_energies_dft
+---
+External Test: 1.497 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+Ridge(alpha=0.7, tol=0.1) - distortion_energy_di_dft
+---
+External Test: 1.156 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+Ridge(tol=0.1) - distortion_energy_dp_dft
+---
+External Test: 3.27 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+KernelRidge(alpha=0.01, kernel='rbf') - e_barrier_dft
+---
+External Test: 2.516 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+KernelRidge(alpha=0.01, kernel='rbf') - q_barrier_dft
+---
+External Test: 5.237 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+KernelRidge(alpha=0.01, kernel='rbf') - sum_distortion_energies_dft
+---
+External Test: 4.591 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+KernelRidge(alpha=0.01, kernel='rbf') - interaction_energies_dft
+---
+External Test: 2.075 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+KernelRidge(alpha=0.1, kernel='rbf') - distortion_energy_di_dft
+---
+External Test: 2.737 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+KernelRidge(alpha=0.01, kernel='rbf') - distortion_energy_dp_dft
+---
+External Test: 2.289 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+SVR(C=50, coef0=0, degree=1, epsilon=0.001) - e_barrier_dft
+---
+External Test: 3.746 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+SVR(C=50, coef0=0, degree=1, epsilon=0.001, gamma='auto') - q_barrier_dft
+---
+External Test: 3.425 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+SVR(C=50, coef0=0, degree=1, epsilon=0.001) - sum_distortion_energies_dft
+---
+External Test: 2.945 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+SVR(C=50, coef0=0, degree=1, epsilon=0.025, gamma='auto') - interaction_energies_dft
+---
+External Test: 1.688 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+SVR(C=50, coef0=0, degree=1, epsilon=0.01) - distortion_energy_di_dft
+---
+External Test: 1.324 kcal/mol
+###
+Dataset: da 
+Feature Selection Method: manual
+---
+###
+SVR(C=50, coef0=0, degree=1, epsilon=0.01) - distortion_energy_dp_dft
+---
+External Test: 1.461 kcal/mol
+###

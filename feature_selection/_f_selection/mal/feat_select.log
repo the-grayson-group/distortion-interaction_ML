@@ -1,0 +1,5 @@
+Dataset shape before - (1000, 1038)
+---
+Dataset shape out - (1000, 64)
+---
+Features selected saved to manual_mal.pkl. Removed features saved to manual_mal_removed_features.pkl

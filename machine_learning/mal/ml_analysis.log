@@ -1,0 +1,28 @@
+Dataset: mal 
+Feature Selection Method: manual
+---
+Dataset: mal 
+Feature Selection Method: manual
+---
+X Shape: (1000, 56)
+y Shape: (1000, 5)
+---
+Train/Test/Validation Split Shapes:
+X Train: (800, 56)
+X Test: (100, 56)
+X Validation: (100, 56)
+y Train: (800, 5)
+y Test: (100, 5)
+y Validation: (100, 5)
+---
+Dataset: mal 
+Feature Selection Method: manual
+---
+Dataset: mal 
+Feature Selection Method: manual
+---
+NN with 4 hidden layers on distortion_energy_0_dft.
+                 Train MAE: 0.549
+                 Test MAE: 0.646
+                 Validation MAE 0.554
+                 ---

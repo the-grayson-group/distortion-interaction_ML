@@ -1,0 +1,14 @@
+# dataset: '3_2'
+# paths:
+#   ts: 'ts/Goodvibes_am1_gas_3_2_ts.csv'
+#   gs: 'gs/Goodvibes_am1_gas_3_2_gs.csv'
+#   dist_gs: 'dist_gs/Goodvibes_am1_gas_3_2_dist_gs.csv'
+# display: False
+# filename: 'new_am1_gas_three_two_barriers'
+
+dataset: 'dft_3_2'
+paths:
+  barriers: '3_2_energies.pkl'
+  dist_gs: 'dist_gs/Goodvibes_dft_solvent_3_2_dist_gs_w_masses.pkl'
+display: False
+filename: 'new_dft_solvent_three_two_barriers'

@@ -1,0 +1,15 @@
+# dataset: 'da'
+# paths:
+#   ts: 'barriers/lit_da/ts/Goodvibes_dft_cyalk_ts.csv'
+#   gs: 'barriers/lit_da/gs/Goodvibes_dft_cyalk_gs.csv'
+#   dist_gs: 'barriers/lit_da/dist_gs/Goodvibes_dft_cyalk_dist_gs.csv'
+# display: True
+# filename: 'dft_cyalk_barriers'
+
+dataset: 'da'
+paths:
+  ts: 'barriers/lit_da/ts/Goodvibes_am1_cypro_ts.csv'
+  gs: 'barriers/lit_da/gs/Goodvibes_am1_cypro_gs.csv'
+  dist_gs: 'barriers/lit_da/dist_gs/Goodvibes_am1_cypro_dist_gs.csv'
+display: True
+filename: 'am1_cypro_barriers'

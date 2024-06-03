@@ -1,0 +1,7 @@
+dataset: 'da'
+paths:
+  ts: 'ts/Goodvibes_dft_exo_ts.csv'
+  gs: 'gs/Goodvibes_dft_exo_gs.csv'
+  dist_gs: 'dist_gs/Goodvibes_dft_exo_dist_gs.csv'
+display: True
+filename: 'new_dft_da_exo_barriers'

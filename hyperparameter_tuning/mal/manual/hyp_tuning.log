@@ -1,0 +1,64 @@
+Dataset: mal.pkl 
+Feature Selection Method: manual
+---
+X Shape: (1000, 22)
+y Shape: (1000, 6)
+---
+Train/Test/Validation Split Shapes:
+X Train: (800, 22)
+X Test: (100, 22)
+X Validation: (100, 22)
+y Train: (800, 6)
+y Test: (100, 6)
+y Validation: (100, 6)
+---
+Single Task Models
+---
+Running ridge
+Model already tuned - skipping ridge_e_barrier_dft
+Model already tuned - skipping ridge_q_barrier_dft
+Model already tuned - skipping ridge_sum_distortion_energies_dft
+Model already tuned - skipping ridge_interaction_energies_dft
+Model already tuned - skipping ridge_distortion_energy_1_dft
+Model already tuned - skipping ridge_distortion_energy_0_dft
+Running krr
+Model already tuned - skipping krr_e_barrier_dft
+Model already tuned - skipping krr_q_barrier_dft
+Model already tuned - skipping krr_sum_distortion_energies_dft
+Model already tuned - skipping krr_interaction_energies_dft
+Model already tuned - skipping krr_distortion_energy_1_dft
+Model already tuned - skipping krr_distortion_energy_0_dft
+Running svr
+Model already tuned - skipping svr_e_barrier_dft
+Model already tuned - skipping svr_q_barrier_dft
+Model already tuned - skipping svr_sum_distortion_energies_dft
+Model already tuned - skipping svr_interaction_energies_dft
+Model already tuned - skipping svr_distortion_energy_1_dft
+Model already tuned - skipping svr_distortion_energy_0_dft
+Starting Single Task NN Tuning.
+Model already tuned - skipping 2_st_nn_e_barrier_dft
+Model already tuned - skipping 4_st_nn_e_barrier_dft
+Model already tuned - skipping 2_st_nn_q_barrier_dft
+Model already tuned - skipping 4_st_nn_q_barrier_dft
+Model already tuned - skipping 2_st_nn_sum_distortion_energies_dft
+Model already tuned - skipping 4_st_nn_sum_distortion_energies_dft
+Model already tuned - skipping 2_st_nn_interaction_energies_dft
+Model already tuned - skipping 4_st_nn_interaction_energies_dft
+Model already tuned - skipping 2_st_nn_distortion_energy_1_dft
+NN with 4 hidden layers on distortion_energy_1_dft finished running 0:15:10.
+                                 Train MAE: 1.942
+                                 Test MAE: 1.831
+                                 Validation MAE 1.965
+                                 ---
+NN with 2 hidden layers on distortion_energy_0_dft finished running 0:14:57.
+                                 Train MAE: 0.672
+                                 Test MAE: 0.631
+                                 Validation MAE 0.809
+                                 ---
+NN with 4 hidden layers on distortion_energy_0_dft finished running 0:19:39.
+                                 Train MAE: 0.729
+                                 Test MAE: 0.718
+                                 Validation MAE 0.838
+                                 ---
+Starting multi-task tuning.
+Tuned hyperparameters saved to hps.pkl.

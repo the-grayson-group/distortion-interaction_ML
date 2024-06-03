@@ -1,0 +1,117 @@
+Dataset: da 
+Feature Selection Method: manual
+---
+X Shape: (802, 59)
+y Shape: (802, 6)
+---
+Train/Test/Validation Split Shapes:
+X Train: (641, 59)
+X Test: (80, 59)
+X Validation: (81, 59)
+y Train: (641, 6)
+y Test: (80, 6)
+y Validation: (81, 6)
+---
+Single Task Models
+---
+Running ridge
+ridge on e_barrier_dft finished running 0:00:02.
+                         Train MAE: 1.318
+ridge on q_barrier_dft finished running 0:00:02.
+                         Train MAE: 1.26
+ridge on sum_distortion_energies_dft finished running 0:00:02.
+                         Train MAE: 1.128
+ridge on interaction_energies_dft finished running 0:00:02.
+                         Train MAE: 1.058
+ridge on distortion_energy_di_dft finished running 0:00:02.
+                         Train MAE: 0.729
+ridge on distortion_energy_dp_dft finished running 0:00:02.
+                         Train MAE: 0.752
+Running krr
+krr on e_barrier_dft finished running 0:00:05.
+                         Train MAE: 0.646
+krr on q_barrier_dft finished running 0:00:05.
+                         Train MAE: 0.611
+krr on sum_distortion_energies_dft finished running 0:00:05.
+                         Train MAE: 0.581
+krr on interaction_energies_dft finished running 0:00:05.
+                         Train MAE: 0.51
+krr on distortion_energy_di_dft finished running 0:00:05.
+                         Train MAE: 0.475
+krr on distortion_energy_dp_dft finished running 0:00:05.
+                         Train MAE: 0.408
+Running svr
+svr on e_barrier_dft finished running 0:00:57.
+                         Train MAE: 0.802
+svr on q_barrier_dft finished running 0:00:58.
+                         Train MAE: 0.732
+svr on sum_distortion_energies_dft finished running 0:01:01.
+                         Train MAE: 0.606
+svr on interaction_energies_dft finished running 0:01:00.
+                         Train MAE: 0.523
+svr on distortion_energy_di_dft finished running 0:01:03.
+                         Train MAE: 0.413
+svr on distortion_energy_dp_dft finished running 0:01:04.
+                         Train MAE: 0.441
+Starting Single Task NN Tuning.
+NN with 2 hidden layers on e_barrier_dft finished running 0:13:08.
+                                 Train MAE: 1.466
+                                 Test MAE: 1.624
+                                 Validation MAE 1.694
+                                 ---
+NN with 4 hidden layers on e_barrier_dft finished running 0:18:36.
+                                 Train MAE: 1.7
+                                 Test MAE: 1.712
+                                 Validation MAE 1.683
+                                 ---
+NN with 2 hidden layers on q_barrier_dft finished running 0:18:52.
+                                 Train MAE: 1.272
+                                 Test MAE: 1.45
+                                 Validation MAE 1.353
+                                 ---
+NN with 4 hidden layers on q_barrier_dft finished running 0:21:57.
+                                 Train MAE: 1.472
+                                 Test MAE: 1.611
+                                 Validation MAE 1.496
+                                 ---
+NN with 2 hidden layers on sum_distortion_energies_dft finished running 0:22:42.
+                                 Train MAE: 1.036
+                                 Test MAE: 1.138
+                                 Validation MAE 1.142
+                                 ---
+NN with 4 hidden layers on sum_distortion_energies_dft finished running 0:28:29.
+                                 Train MAE: 1.236
+                                 Test MAE: 1.189
+                                 Validation MAE 1.193
+                                 ---
+NN with 2 hidden layers on interaction_energies_dft finished running 0:27:07.
+                                 Train MAE: 0.888
+                                 Test MAE: 1.018
+                                 Validation MAE 1.026
+                                 ---
+NN with 4 hidden layers on interaction_energies_dft finished running 0:33:10.
+                                 Train MAE: 1.155
+                                 Test MAE: 1.279
+                                 Validation MAE 1.182
+                                 ---
+NN with 2 hidden layers on distortion_energy_di_dft finished running 0:30:52.
+                                 Train MAE: 0.745
+                                 Test MAE: 0.848
+                                 Validation MAE 0.838
+                                 ---
+NN with 4 hidden layers on distortion_energy_di_dft finished running 0:36:34.
+                                 Train MAE: 0.869
+                                 Test MAE: 0.79
+                                 Validation MAE 0.883
+                                 ---
+NN with 2 hidden layers on distortion_energy_dp_dft finished running 0:37:00.
+                                 Train MAE: 0.769
+                                 Test MAE: 0.79
+                                 Validation MAE 1.098
+                                 ---
+NN with 4 hidden layers on distortion_energy_dp_dft finished running 0:43:20.
+                                 Train MAE: 0.928
+                                 Test MAE: 1.089
+                                 Validation MAE 1.178
+                                 ---
+Tuned hyperparameters saved to hps.pkl.

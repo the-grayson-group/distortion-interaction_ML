@@ -1,0 +1,24 @@
+   GoodVibes v3.0.1 2024/02/24 20:21:14
+   REF: Luchini, G.; Alegre-Requena J. V.; Guan, Y.; Funes-Ardoiz, I.; Paton, R. S. (2019).
+        GoodVibes: GoodVibes 3.0.1 http://doi.org/10.5281/zenodo.595246
+   Requested: --csv --output dft_cyalk_ts 
+
+   Temperature = 298.15 Kelvin   Pressure = 1 atm
+   All energetic values below shown in Hartree unless otherwise specified.
+
+o  Found vibrational scaling factor of 0.975 for wB97XD/def2TZVP level of theory
+   REF: I. M. Alecu, J. Zheng, Y. Zhao, and D. G. Truhlar, J. Chem. Theory Comput. 6, 2872-2887 (2010).
+
+   Entropic quasi-harmonic treatment: frequency cut-off value of 100.0 wavenumbers will be applied.
+   QS = Grimme: Using a mixture of RRHO and Free-rotor vibrational entropies.
+   REF: Grimme, S. Chem. Eur. J. 2012, 18, 9955-9964
+
+
+   Structure,E,ZPE,H,T.S,T.qh-S,G(T),qh-G(T),
+   ********************************************************************************************************************************
+o  ts_endo_1,-384.732041,0.130852,-384.592664,0.040864,0.040490,-384.633529,-384.633154,
+o  ts_endo_2,-424.082655,0.160594,-423.912924,0.042138,0.041790,-423.955063,-423.954714,
+o  ts_endo_3,-463.437916,0.190354,-463.237662,0.043725,0.043453,-463.281388,-463.281115,
+o  ts_endo_4,-502.754924,0.219343,-502.524615,0.046133,0.045694,-502.570749,-502.570309,
+o  ts_endo_5,-464.644346,0.209752,-464.422663,0.047945,0.047523,-464.470608,-464.470186,
+   ********************************************************************************************************************************

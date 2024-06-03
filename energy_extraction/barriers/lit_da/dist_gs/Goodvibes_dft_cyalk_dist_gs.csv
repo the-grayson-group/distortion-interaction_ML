@@ -1,0 +1,29 @@
+   GoodVibes v3.0.1 2024/02/24 20:30:10
+   REF: Luchini, G.; Alegre-Requena J. V.; Guan, Y.; Funes-Ardoiz, I.; Paton, R. S. (2019).
+        GoodVibes: GoodVibes 3.0.1 http://doi.org/10.5281/zenodo.595246
+   Requested: --csv --output dft_cyalk_dist_gs 
+
+   Temperature = 298.15 Kelvin   Pressure = 1 atm
+   All energetic values below shown in Hartree unless otherwise specified.
+
+o  Found vibrational scaling factor of 0.975 for wB97XD/def2TZVP level of theory
+   REF: I. M. Alecu, J. Zheng, Y. Zhao, and D. G. Truhlar, J. Chem. Theory Comput. 6, 2872-2887 (2010).
+
+   Entropic quasi-harmonic treatment: frequency cut-off value of 100.0 wavenumbers will be applied.
+   QS = Grimme: Using a mixture of RRHO and Free-rotor vibrational entropies.
+   REF: Grimme, S. Chem. Eur. J. 2012, 18, 9955-9964
+
+
+   Structure,E,ZPE,H,T.S,T.qh-S,G(T),qh-G(T),
+   ********************************************************************************************************************************
+o  ts_endo_1_reactant_1,-194.078421,0.090519,-193.982820,0.031611,0.031612,-194.014431,-194.014432,
+o  ts_endo_1_reactant_2,-190.634041,0.036327,-190.593105,0.029971,0.029972,-190.623076,-190.623077,
+o  ts_endo_2_reactant_1,-194.078982,0.090545,-193.983359,0.031605,0.031607,-194.014965,-194.014966,
+o  ts_endo_2_reactant_2,-229.985542,0.066245,-229.914068,0.032086,0.032089,-229.946154,-229.946157,
+o  ts_endo_3_reactant_1,-194.076041,0.090500,-193.980465,0.031600,0.031601,-194.012064,-194.012066,
+o  ts_endo_3_reactant_2,-269.344450,0.095653,-269.242773,0.034350,0.034340,-269.277123,-269.277114,
+o  ts_endo_4_reactant_1,-194.074711,0.090506,-193.979130,0.031595,0.031597,-194.010725,-194.010727,
+o  ts_endo_4_reactant_2,-308.662747,0.124490,-308.531173,0.037000,0.036888,-308.568173,-308.568062,
+o  ts_endo_5_reactant_1,-194.075964,0.090524,-193.980364,0.031597,0.031598,-194.011961,-194.011963,
+o  ts_endo_5_reactant_2,-270.550330,0.114915,-270.427230,0.039070,0.038988,-270.466300,-270.466218,
+   ********************************************************************************************************************************

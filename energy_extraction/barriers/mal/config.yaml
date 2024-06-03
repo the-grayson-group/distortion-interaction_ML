@@ -1,0 +1,7 @@
+dataset: 'mal'
+paths:
+  ts: 'ts\Goodvibes_am1_ts.csv'
+  gs: 'gs\Goodvibes_am1_gs.csv'
+  dist_gs: 'dist_gs\Goodvibes_am1_dist_gs.csv'
+display: False
+filename: 'am1_mal_barriers'
