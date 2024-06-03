@@ -1,6 +1,6 @@
 # diassep.py
 
-diassep.py takes all .out frequency calculations in the current working directory and splits them into two components and saves the new files in the same directory.
+diassep.py takes all ```.out``` frequency calculations in the current working directory and splits them into two distorted reactants and saves the new files in the same directory.
 
 ## Usage
 
@@ -15,9 +15,12 @@ There is only a few dependencies for this code to run:
 
 ``` xyz_py ```
 
-NOTE: Depending upon the atoms in the systems you may run into trouble - Br is not included in the molml BOND_LENGTHS dictionary so, you will have to navigate to ``` molml/molml/constants.py ``` and modify the file to include Br.
+NOTE: Depending upon the atoms in the chemical systems you may run into trouble - Br is not included in the molml BOND_LENGTHS dictionary so, you will have to add this by loading in the dictionary as follows:
 
-These are likely to all be in an existing environment that the user already has built on the computing resource they are running this on (Grayson Group). 
+```
+from molml.constants import BOND_LENGTHS
+BOND_LENGTHS['Br'] = {"1":1.3}
+```
 
 ### Command line usage
 Add diassep.py to your scripts folder and make executable.
@@ -47,5 +50,9 @@ There are a few different optional arguments that can be used with this code. Th
   -c COMMONATOMS      Utilises a dictionary of common atoms to separate structures.
   -x                  Perform the DIAS separation for xyz files - requires commonatoms (-c) to be parsed.
   ```
+
+### Recommended Usage
+
+Utilising the adjacency matrix approach (```-a```) provides the most stable method of separating structures. This is recommended for new systems that have not previously been separated with this code.
 
 

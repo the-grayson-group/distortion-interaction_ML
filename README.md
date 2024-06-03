@@ -2,11 +2,11 @@
 
 ![toc](toc.png "TOC")
 
-This repo contains the code associated with the paper titled Distortion/Interaction Analysis via Machine Learning. In each sub directory there is a ```README.md``` file which explains more regarding the code in that specific directory. 
+This repository contains the code associated with the paper titled "Distortion/Interaction Analysis via Machine Learning". In each sub directory there is a ```README.md``` file which explains more regarding the code in that specific directory. 
 
 ### [Requirements](requirements.txt)
 
-The code in the project works with the following packages. If using slightly different versions, adpatations may be required in the code.
+The code in the project works with the following packages. If using slightly different versions, adaptations may be required in the code.
 
 ```
 molml==0.9.0
@@ -40,7 +40,7 @@ Code to extract features for each dataset - for new datasets, adaptations may be
 
 ### [feature_selection](feature_selection)
 
-Code to perform feature selection for a givne dataset after all possible features have been extracted.
+Code to perform feature selection for a given dataset after all possible features have been extracted.
 
 ### [hyperparameter_tuning](hyperparameter_tuning)
 

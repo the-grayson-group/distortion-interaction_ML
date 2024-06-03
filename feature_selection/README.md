@@ -1,6 +1,6 @@
 # feature_selection
 
-This directory contains the code required for feature selection for the datasets. Varying different approaches are usable however, data is available for the method used in the paper to reduce space occupied.
+This directory contains the code required for feature selection for the datasets. Varying different approaches are usable however, data is available for the method used in the paper to reduce space occupied in the repository.
 
 ## _f_selection
 
