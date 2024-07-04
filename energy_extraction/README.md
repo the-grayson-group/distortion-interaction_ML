@@ -2,7 +2,7 @@
 
 This is the script used to extract the distortion, interaction and reaction barrier energies. It is designed to be specific to the four datasets we are interested in (Diels-Alder, [3+2] Cycloadditions, nitro-Michael addition, and dimethyl malonate Michael addition).
 
-To run this code, a ```setup.yaml``` file is required as it provides suitable flexability and control over the energy extraction process. Below is an example of the contents:
+To run this code, a ```setup.yaml``` file is required as it provides suitable flexibility and control over the energy extraction process. Below is an example of the contents:
 
 ```
 dataset: '3_2'

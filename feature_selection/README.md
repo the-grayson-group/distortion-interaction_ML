@@ -13,7 +13,7 @@ This script generates the ```pre_ml_mae.csv``` and ```pre_ml_rmse.csv``` which c
 
 ## f_select.py
 
-This script performs feature selection for a given set of features. It has flexability in what method can be used and will ask the user for certain inputs. User input is not ideal but, there are a lot of different combinations thus, allowing the user control on which dataset to perform the feature selection for is best currently. Could likely be rewritten to take in a parsed file instead.
+This script performs feature selection for a given set of features. It has flexibility in what method can be used and will ask the user for certain inputs. User input is not ideal but, there are a lot of different combinations thus, allowing the user control on which dataset to perform the feature selection for is best currently. Could likely be rewritten to take in a parsed file instead.
 
 ### Usage
 
