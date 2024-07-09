@@ -1,4 +1,4 @@
-# [Distortion/Interaction Analysis via Machine Learning](linktopaper)
+# [Distortion/Interaction Analysis via Machine Learning](https://doi.org/10.26434/chemrxiv-2024-rpk9q)
 
 ![toc](toc.png "TOC")
 
