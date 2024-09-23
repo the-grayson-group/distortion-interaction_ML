@@ -38,6 +38,7 @@ from sklearn.linear_model import Ridge
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.metrics import mean_absolute_error
 from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split, GridSearchCV
 # TensorFlow imports
  # Remove build information associated with tensorflow
@@ -300,9 +301,11 @@ class SingleTask():
         models (Dictionary): A dictionary containing all the models for single task learning.
         hp_values (Dictionary): A dictionary contraining all the hyperparameters for each of the models.
         '''
-        models = {'ridge':{'model':Ridge(), 'hp':['alpha', 'tol']},
-                  'krr':{'model':KernelRidge(kernel='poly'), 'hp':['alpha', 'gamma']},
-                  'svr':{'model':SVR(kernel='rbf'), 'hp':['gamma', 'epsilon', 'C', 'coef0', 'degree']}
+        models = {
+                #   'ridge':{'model':Ridge(), 'hp':['alpha', 'tol']},
+                #   'krr':{'model':KernelRidge(kernel='poly'), 'hp':['alpha', 'gamma']},
+                #   'svr':{'model':SVR(kernel='rbf'), 'hp':['gamma', 'epsilon', 'C', 'coef0', 'degree']},
+                  'rf':{'model':RandomForestRegressor(), 'hp':['max_depth', 'n_estimators', 'max_features', 'min_samples_leaf']}
                   }
         hp_values = {'alpha':[0.01, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
                      'l1_ratio':[0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
@@ -311,7 +314,11 @@ class SingleTask():
                      'epsilon':[0.001, 0.01, 0.025, 0.05, 0.1, 0.25, 0.5, 1],
                      'C':[1, 30, 50],
                      'coef0': [0, 1], 
-                     'degree': [1, 2, 3]}
+                     'degree': [1, 2, 3],
+                     'max_depth':[3, 5, 7],
+                     'n_estimators':[10, 50, 100],
+                     'max_features':[10, 20, 30],
+                     'min_samples_leaf':[1, 2, 3]}
         return models, hp_values
     
     def _runner(data_dict):
@@ -529,8 +536,8 @@ def main():
         current_task = 'single_task'
         logger.info('Single Task Models\n---')
         st_tuned_dict = SingleTask._runner(data_dict)
-        st_nn_tuned_dict = SingleTask._single_task_nn(data_dict)
-
+        # st_nn_tuned_dict = SingleTask._single_task_nn(data_dict)
+        st_nn_tuned_dict = {}
         # Save results
         General._save([st_tuned_dict, st_nn_tuned_dict])
         logger.info('Tuned hyperparameters saved to hps.pkl.')

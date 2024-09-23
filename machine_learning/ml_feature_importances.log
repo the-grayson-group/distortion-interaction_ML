@@ -1,0 +1,38 @@
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+X Shape: (802, 58)
+y Shape: (802, 5)
+---
+Train/Test/Validation Split Shapes:
+X Train: (641, 58)
+X Test: (80, 58)
+X Validation: (81, 58)
+y Train: (641, 5)
+y Test: (80, 5)
+y Validation: (81, 5)
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
+Dataset: da 
+Feature Selection Method: manual
+---
