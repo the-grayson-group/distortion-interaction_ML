@@ -59,6 +59,7 @@ from sklearn.linear_model import Ridge
 from sklearn.kernel_ridge import KernelRidge
 from sklearn.metrics import mean_absolute_error
 from sklearn.preprocessing import StandardScaler
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split, cross_val_score
 
 # Set random seed.
@@ -333,7 +334,10 @@ class General():
         nn_models = [i for i in nn_models if i not in self.remove]
         # Added code for temporarily removing the sums of distortion energy predictions.
         nn_models = [i for i in nn_models if 'sum_distortion_energies' not in i]
-        self.run_models.append(nn_models[0])
+        if nn_models == []:
+            pass
+        else:
+            self.run_models.append(nn_models[0])
         # Added code for temporarily removing the sums of distortion energy predictions.
         sum_remove = []
         for mod in self.run_models:
@@ -351,7 +355,8 @@ class SingleTask(General):
         self.model_dict = {
                 'ridge':Ridge(), 
                 'krr':KernelRidge(kernel='rbf'),
-                'svr':SVR(kernel='rbf')
+                'svr':SVR(kernel='rbf'),
+                'rf':RandomForestRegressor()
             }
 
     def _runner(self, run_models, data_dict, hps):

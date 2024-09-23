@@ -72,7 +72,8 @@ model_d = {
     'krr':'KRR',
     'svr':'SVR',
     '2':'2 Layer NN',
-    '4':'4 Layer NN'
+    '4':'4 Layer NN',
+    'rf':'Random Forest'
 }
 # Get the path to save files to later.
 path = sys.argv[-1].split('ml_results.pkl')[0]
