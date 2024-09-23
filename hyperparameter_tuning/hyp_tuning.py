@@ -58,7 +58,6 @@ from keras import layers, Sequential, models, backend as K
 # Final depreciation warning removal - when debugging, hash this line.
 tf.get_logger().setLevel('ERROR')
 
-
 # Set seed for hyperparameter tuning.
 seed(23)
 random.set_seed(23)
@@ -302,9 +301,9 @@ class SingleTask():
         hp_values (Dictionary): A dictionary contraining all the hyperparameters for each of the models.
         '''
         models = {
-                #   'ridge':{'model':Ridge(), 'hp':['alpha', 'tol']},
-                #   'krr':{'model':KernelRidge(kernel='poly'), 'hp':['alpha', 'gamma']},
-                #   'svr':{'model':SVR(kernel='rbf'), 'hp':['gamma', 'epsilon', 'C', 'coef0', 'degree']},
+                  'ridge':{'model':Ridge(), 'hp':['alpha', 'tol']},
+                  'krr':{'model':KernelRidge(kernel='poly'), 'hp':['alpha', 'gamma']},
+                  'svr':{'model':SVR(kernel='rbf'), 'hp':['gamma', 'epsilon', 'C', 'coef0', 'degree']},
                   'rf':{'model':RandomForestRegressor(), 'hp':['max_depth', 'n_estimators', 'max_features', 'min_samples_leaf']}
                   }
         hp_values = {'alpha':[0.01, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
@@ -536,8 +535,7 @@ def main():
         current_task = 'single_task'
         logger.info('Single Task Models\n---')
         st_tuned_dict = SingleTask._runner(data_dict)
-        # st_nn_tuned_dict = SingleTask._single_task_nn(data_dict)
-        st_nn_tuned_dict = {}
+        st_nn_tuned_dict = SingleTask._single_task_nn(data_dict)
         # Save results
         General._save([st_tuned_dict, st_nn_tuned_dict])
         logger.info('Tuned hyperparameters saved to hps.pkl.')

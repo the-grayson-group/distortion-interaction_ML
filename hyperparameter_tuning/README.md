@@ -11,7 +11,8 @@ This is the script to perform the hyperparameter tuning. This code require the u
 - ``` Kernel Ridge (Polynomial Kernel) ```
 - ``` Support Vector Regression (Radial Basis Function Kernel) ```
 - ``` Neural Network with 2 Hidden Layers ```
-- ``` Neural Network with 4 Hidden Layers``` 
+- ``` Neural Network with 4 Hidden Layers ``` 
+- ``` Random Forest ```
 
 The usage of the code is as follows:
 
